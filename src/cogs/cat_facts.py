@@ -11,6 +11,11 @@ class cat_command(commands.Cog):
 		description = "Quieres ver datos curiosos de gatos usa este comando"
 	)
 	async def cat(self,ctx):
+		embed2 = discord.Embed(
+			title="Puede tardar un momento :clock:",
+			color=discord.Color.red()
+		)
+		await ctx.send(embed = embed2)
 		response = requests.get("https://the-cat-fact.herokuapp.com/api/randomfact")
 		status = response.status_code
 		if status == int(200):
