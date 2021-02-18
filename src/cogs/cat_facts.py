@@ -28,7 +28,7 @@ class cat_command(commands.Cog):
 			embed = discord.Embed(
 				title=message,
 				description=fact,
-				color=discord.Color.purple(),
+				color=discord.Color.random(),
 			)
 			embed.set_footer(text=api_status)
 			embed.set_author(

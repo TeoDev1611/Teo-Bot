@@ -21,6 +21,6 @@ bot.load_extension("cogs.ping")
 bot.load_extension("cogs.avatar")
 bot.load_extension("cogs.quotes")
 bot.load_extension("cogs.cat_facts")
-
+bot.load_extension("cogs.dogs")
 # Running the bot
 bot.run(DISCORD_TOKEN)

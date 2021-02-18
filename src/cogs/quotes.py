@@ -23,10 +23,11 @@ class InspireCog(commands.Cog, name="quote_command"):
         embed = discord.Embed(
             title="Cita Inspiradora",
             description=quote,
-            color=discord.Color.blue()
+            color=discord.Color.random()
         )
         embed.set_footer(text=author)
         await ctx.send(embed=embed)
+
 
 # Cargar el bot en el archivo principal
 def setup(bot):

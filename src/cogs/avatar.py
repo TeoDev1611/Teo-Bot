@@ -9,26 +9,28 @@ class avatar_command(commands.Cog):
     @commands.command(
         name="avatar",
         usage="!avatar o !avatar @user",
-        description = " Muestra el avatar de una persona"
+        description=" Muestra el avatar de una persona"
     )
-    async def avatar(self,ctx, member: discord.Member = None):
+    async def avatar(self, ctx, member: discord.Member = None):
         if member is None:
             embed = discord.Embed(
                 title=" El comando usado deberia ser **!avatar [miembro]**",
-                color = discord.Color.green(),
-                footer = ctx.message.created_at
+                color=discord.Color.random(),
+                footer=ctx.message.created_at
             )
-            await ctx.send(embed = embed)
+            await ctx.send(embed=embed)
         else:
             embed2 = discord.Embed(
-                title=f"Avatar! de {member}", 
-                color = discord.Color.green(), 
+                title=f"Avatar! de {member}",
+                color=discord.Color.random(),
                 timestamp=ctx.message.created_at
-                )
+            )
             embed2.add_field(
-                name="Animado?", 
+                name="Animado?",
                 value=member.is_avatar_animated())
             embed2.set_image(url=member.avatar_url)
             await ctx.send(embed=embed2)
+
+
 def setup(bot):
-    bot.add_cog(avatar_command(bot))    
+    bot.add_cog(avatar_command(bot))
