@@ -28,8 +28,7 @@ class dogs_commands(commands.Cog):
                 title="Un hermoso perrito",
                 color=discord.Color.random()
             )
-            embed.set_footer(api_status)
-            embed.set_image(image_link)
+            embed.set_image(url=image_link)
             await ctx.send(embed=embed)
 
 

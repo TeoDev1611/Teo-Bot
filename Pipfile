@@ -6,9 +6,11 @@ name = "pypi"
 [packages]
 discord = "*"
 requests = "*"
+typing = "*"
 
 [dev-packages]
 python-decouple = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.8"
