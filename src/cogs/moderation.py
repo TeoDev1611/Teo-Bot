@@ -11,12 +11,12 @@ class moderation_commands(commands.Cog):
     )  # uses command decorators, in this case inside a cog
     @commands.has_permissions(ban_members=True)  # only people that have permissions to ban users can use this command
     async def ban(self, ctx, user: discord.Member, *,
-                  reason):  # The person banning someone has to ping the user to ban, and input a reason. Remove self if you are outside a cog.
+                  reason):
         await ctx.guild.ban(user, reason=reason)  # Bans the user.
         embed = discord.Embed(
             title=f'El usuario {user} ha sido baneado',
             description=f'Por la siguiente razon **{reason}**',
-            color=discord.Color.random()
+            color=discord.Color.red()
         )
         await ctx.send(embed=embed)
 
@@ -30,7 +30,7 @@ class moderation_commands(commands.Cog):
         embed = discord.Embed(
             title=f'El usuario {user} ha sido kickeado',
             description=f'Por la siguiente razon **{reason}**',
-            color=discord.Color.random()
+            color=discord.Color.red()
         )
         await ctx.send(embed=embed)
 

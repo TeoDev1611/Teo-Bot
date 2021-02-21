@@ -8,7 +8,7 @@ Un bot de discord con muchas peculiaridades escrito en python
 
 ## Explicación y Uso
 
-El entrono virtual esta creado con [pipenv](https://pipenv-es.readthedocs.io/es/latest/) el codigo esta formateado con autopep8 los commits son hechos con [commizen](https://github.com/commitizen/cz-cli) 
+El entrono virtual esta creado con [pipenv](https://pipenv-es.readthedocs.io/es/latest/) el codigo esta formateado con autopep8 los commits son hechos con [commitizen](https://github.com/commitizen/cz-cli) 
 
 ---
 
