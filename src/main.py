@@ -18,7 +18,7 @@ async def on_ready():
 
 # Load the extensions
 extensions = ["cogs.moderation", "cogs.dogs",
-              "cogs.cat_facts", "cogs.quotes", "cogs.avatar", "cogs.ping"]
+              "cogs.cat_facts", "cogs.quotes", "cogs.avatar", "cogs.ping", "cogs.invitacion"]
 
 for i in extensions:
     try:
