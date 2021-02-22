@@ -1,5 +1,6 @@
 from decouple import config
 from discord.ext import commands
+import discord
 
 # Add the token of the bot
 DISCORD_TOKEN = config("BOT_TOKEN")
@@ -14,6 +15,9 @@ bot = commands.Bot(command_prefix=prefix, description=description)
 @bot.event
 async def on_ready():
     print(f"Initial as {bot.user}")
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=" www.github.com/TeoDev1611"))
+
+
 
 
 bot. load_extension("cogs.ping")
