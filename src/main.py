@@ -16,13 +16,11 @@ async def on_ready():
     print(f"Initial as {bot.user}")
 
 
-# Load the extensions
 bot. load_extension("cogs.ping")
 bot. load_extension("cogs.avatar")
 bot. load_extension("cogs.quotes")
 bot. load_extension("cogs.cat_facts")
 bot. load_extension("cogs.dogs")
 bot. load_extension("cogs.moderation")
-bot.load_extension("cogs.invitacion")
 # Running the bot
 bot.run(DISCORD_TOKEN)
