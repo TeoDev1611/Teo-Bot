@@ -22,5 +22,6 @@ bot. load_extension("cogs.quotes")
 bot. load_extension("cogs.cat_facts")
 bot. load_extension("cogs.dogs")
 bot.load_extension("cogs.invitacion")
+bot.load_extension("cogs.hola")
 # Running the bot
 bot.run(DISCORD_TOKEN)
