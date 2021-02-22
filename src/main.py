@@ -17,15 +17,12 @@ async def on_ready():
 
 
 # Load the extensions
-extensions = ["cogs.moderation", "cogs.dogs",
-              "cogs.cat_facts", "cogs.quotes", "cogs.avatar", "cogs.ping", "cogs.invitacion"]
-
-for i in extensions:
-    try:
-        bot.load_extension(i)
-    except Exception as e:
-        print("Ups a ocurrido un error")
-        print(e)
-
+bot. load_extension("cogs.ping")
+bot. load_extension("cogs.avatar")
+bot. load_extension("cogs.quotes")
+bot. load_extension("cogs.cat_facts")
+bot. load_extension("cogs.dogs")
+bot. load_extension("cogs.moderation")
+bot.load_extension("cogs.invitacion")
 # Running the bot
 bot.run(DISCORD_TOKEN)

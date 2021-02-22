@@ -1,7 +1,7 @@
 from discord.ext import commands
 import discord
 
-class invitacion_command(object):
+class invitacion_command(commands.Cog):
 	def __init__(self,bot):
 		self.bot = bot
 
@@ -25,6 +25,7 @@ o solo  https://senderotecnologico.gq/
 			color = discord.Color.random()
 			)
 		await ctx.send(embed=embed)
+		
 def setup(bot):
 	bot.add_cog(invitacion_command(bot))
 		
